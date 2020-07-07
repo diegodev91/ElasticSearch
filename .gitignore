@@ -7,3 +7,10 @@
 /ElasticSearch/bin/Debug/netcoreapp3.1/appsettings.Development.json
 /ElasticSearch/bin/Debug/netcoreapp3.1/appsettings.json
 /ElasticSearch/obj
+/ElasticSearch/bin/Debug/netcoreapp3.1/ElasticSearch.StaticWebAssets.xml
+/ElasticSearch/bin/Debug/netcoreapp3.1/ElasticSearch.runtimeconfig.json
+/ElasticSearch/bin/Debug/netcoreapp3.1/ElasticSearch.runtimeconfig.dev.json
+/ElasticSearch/bin/Debug/netcoreapp3.1/ElasticSearch.pdb
+/ElasticSearch/bin/Debug/netcoreapp3.1/ElasticSearch.exe
+/ElasticSearch/bin/Debug/netcoreapp3.1/ElasticSearch.dll
+/ElasticSearch/bin/Debug/netcoreapp3.1/ElasticSearch.deps.json
