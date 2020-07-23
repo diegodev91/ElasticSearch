@@ -7,7 +7,7 @@ namespace ElasticSearch.Controllers
     {
         public string ContentObjectType { get; set; }
         public List<int> CollectionIds { get; set; }
-        public string Sex { get; set; }
+        public List<string> Sexes { get; set; }
         public string ContentId { get; set; }
         public long ContentTypeId { get; set; }
         public List<int> LicensesIds { get; set; }

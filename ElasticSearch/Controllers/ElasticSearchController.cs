@@ -27,10 +27,11 @@ namespace ElasticSearch.Controllers
                                              .DefaultIndex(indexName);
             var client = new ElasticClient(settings);
 
-            var result = await client.SearchAsync<ItemDTO>(s => s.AllIndices().From(0).Size(100)
-                .Query(q => q.Match(m => m.Field(f => f.Sex).Query("f"))));
+            var result = await client.SearchAsync<ItemDTO>(s => s.AllIndices().From(0).Size(1000)
+                .Query(q => q.Match(m => m.Field(f => f.Sexes).Query("f")))
+                .Aggregations(p => p.Terms("sex_aggregation", g => g.Field(i => i.Sexes))));
 
-            return new SearchResult(){ ResultSet = result.Documents, Aggregations = result.Aggregations };
+            return new SearchResult(){ ResultSet = result.Documents, Aggregations = result.Aggregations[$"sex_aggregation"] };
         }
     }
 }

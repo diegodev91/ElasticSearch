@@ -6,6 +6,6 @@ namespace ElasticSearch.Controllers
     public class SearchResult
     {
         public IEnumerable<object> ResultSet { get; set; }
-        public AggregateDictionary Aggregations { get; set; }
+        public IAggregate Aggregations { get; set; }
     }
 }
